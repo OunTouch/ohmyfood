@@ -1,0 +1,92 @@
+.header{
+    width:100%;
+    height: fit-content;
+    @include flexcolumn;
+
+    figure{
+        width: 100%;
+        height: 60px;
+        @include flexcenter;
+        z-index: 10;
+        box-shadow: 0 0 10px 0 gray;
+    }
+
+    &__location{
+        width: 100%;
+        height: 60px;
+        background-color: map-get($map: $colors, $key: color-four);
+        @include flexcenter;
+        z-index: 5;
+
+    }    
+}
+
+.btn{
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: map-get($map: $colors, $key: color-four);
+    display: flex;
+    position: relative;
+    border: none;
+    
+    &__order{
+        position: absolute;
+        left: -10px;
+        top: 15px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        color: white;
+        background-color: map-get($map: $colors, $key: color-one); 
+        @include flexcenter;
+    }
+
+    
+    i{
+        position: absolute;
+        top: 15px;
+        bottom: 0;
+        left: 20px;
+    }
+
+    &__text{
+        position: absolute;
+        top: 15px;
+        left: 40px;
+    }
+
+
+}
+
+
+.card{
+    border: 1px solid map-get($map: $colors, $key: color-four);
+    border-radius: 15px;
+    position: relative;
+
+    a{
+        text-decoration: none;
+    }
+
+    h3,p{
+        padding: 1%;
+    }
+
+    img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 180px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    i{
+        position: absolute;
+        bottom: 8%;
+        right: 7%;
+    }
+
+    
+
+}

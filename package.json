@@ -1,0 +1,11 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./css/main.scss:./css/style.css"
+  },
+  "author": "OunTouch",
+  "license": "ISC"
+}
