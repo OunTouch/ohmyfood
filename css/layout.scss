@@ -1,7 +1,11 @@
 /****FONTS****/
 
 
-h1,h2,p, a,li{
+h1{
+    font-family: "Shrikhand";
+}
+
+h2,p, a,li{
     font-family: "Roboto";
 }
 
@@ -22,8 +26,4 @@ section{
 footer{
     background-color: map-get($map: $colors, $key: color-five);
     @include flexcolumn;
-
-    img{
-        color: white;
-    }
 }

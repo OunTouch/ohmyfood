@@ -6,33 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La palette du goût</title>
     <script src="https://kit.fontawesome.com/67673b6d3e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.scss">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <img src="../images/logo/ohmyfood@2x.svg" alt="logo">
+    <header class="header__restaurant">
         <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/logo/ohmyfood@2x.svg" alt="logo">
     </header>
-    <main>
-        <figure>
+    <main class="main__restaurant">
+        <figure class="img__landing">
             <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="un plat de restaurant">
         </figure>
-        <section>
+        <section class="menu__restaurant">
             <h1>
-                La Palette du Goût
+                La palette du goût
                 <i class="fa-regular fa-heart"></i>
             </h1>
             <h2>
                 ENTRÉES
             </h2>
-            <button>
-                <h3>Fricassée d'escargot</h3>
-                <p>
-                    Au piment d'Espelette
-                    <span>25€</span>
-                </p>
-                <i class="fa-regular fa-circle-check"></i>
+            <button class="btn__dishe">
+                <div class="text">
+                    <h3>Fricassée d'escargot</h3>
+                    <p>
+                        Au piment d'Espelette
+                        <span>25€</span>
+                    </p>
+                </div>
+                <div class="checked">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
             </button>
             <button>
                 <h3>Foie gras de canard mi-cuit</h3>
