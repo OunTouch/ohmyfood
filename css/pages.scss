@@ -18,6 +18,11 @@
             font-size: large;
         }
     }
+
+    img{
+        width: 50%;
+        height: 70%;
+    }
 }
 
 .main__restaurant{
@@ -63,10 +68,14 @@
         overflow: hidden;
         display: flex;
         align-items: center;
+        cursor: pointer;
+        padding-right: 0;
+        background-color: white;
 
-        :hover + .checked{
+        :hover + i::before{
             transform: translateX(-50px);
         }
+
 }
 
 .text{
@@ -84,13 +93,20 @@
     }
 }
 
-.checked{
-    width: 50px;
-    height: 100%;
+.btn__dishe i::before{
+    width: 54px;
+    height: 62px;
     background-color: map-get($map: $colors, $key: color-three);
     @include flexcenter;
-    margin-right: -50px;
+    margin-right: -54px;
     transform: translateX(0);
     transition: transform 400ms;
+
+    i{
+        transform: rotate(-90deg);
+        transition: transform 400ms ease-in-out;
+    }
 }
+
+
 

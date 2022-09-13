@@ -170,7 +170,7 @@ section {
 }
 
 /****FOOTER****/
-footer {
+.footer__index {
   background-color: rgb(50, 60, 55);
   display: flex;
   flex-direction: column;
@@ -193,6 +193,10 @@ footer {
 }
 .header__restaurant a i {
   font-size: large;
+}
+.header__restaurant img {
+  width: 50%;
+  height: 70%;
 }
 
 .main__restaurant {
@@ -235,8 +239,11 @@ footer {
   overflow: hidden;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  padding-right: 0;
+  background-color: white;
 }
-.btn__dishe :hover + .checked {
+.btn__dishe :hover + i::before {
   transform: translateX(-50px);
 }
 
@@ -253,16 +260,20 @@ footer {
   justify-content: space-between;
 }
 
-.checked {
-  width: 50px;
-  height: 100%;
+.btn__dishe i::before {
+  width: 54px;
+  height: 62px;
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -50px;
+  margin-right: -54px;
   transform: translateX(0);
   transition: transform 400ms;
+}
+.btn__dishe i::before i {
+  transform: rotate(-90deg);
+  transition: transform 400ms ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
