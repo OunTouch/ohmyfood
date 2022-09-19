@@ -23,7 +23,23 @@ section{
 
 /****FOOTER****/
 
-.footer__index{
+footer{
     background-color: map-get($map: $colors, $key: color-five);
     @include flexcolumn;
+}
+
+.footer__pages{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+
+    img{
+        width: 90px;
+        height: 20px;   
+    }
+
+    a{
+        color: white;
+        font-size: 13px;
+    }
 }

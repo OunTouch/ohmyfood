@@ -72,7 +72,15 @@
         padding-right: 0;
         background-color: white;
 
-        :hover + i::before{
+        &:hover .card__animation{
+            transform: translateX(-50px);
+        }
+
+        &:hover .card__animation i{
+            transform: rotate(0);
+        }
+
+        &:hover .text p span{
             transform: translateX(-50px);
         }
 
@@ -91,22 +99,32 @@
         display: flex;
         justify-content: space-between;
     }
+
+    span{
+        transform: translateX(0);
+        transition: transform 400ms;}
 }
 
-.btn__dishe i::before{
-    width: 54px;
-    height: 62px;
+
+
+.card__animation{
+    width: 50px;
+    height: 60px;
     background-color: map-get($map: $colors, $key: color-three);
     @include flexcenter;
-    margin-right: -54px;
     transform: translateX(0);
-    transition: transform 400ms;
+    transition: transform 400ms; 
+    margin-right: -50px;
 
     i{
-        transform: rotate(-90deg);
-        transition: transform 400ms ease-in-out;
+        color: white;
+        transform: rotate(-180deg);
+        transition: transform 600ms 100ms ease-out;
     }
 }
+
+
+
 
 
 
