@@ -92,3 +92,21 @@
 }
 
 
+/****COEUR****/
+
+.heart__checkbox{
+    position: relative;
+}
+
+.heart--empty{
+    position: absolute;
+}
+
+.heart--fill{
+    position: absolute;
+    opacity: 0;
+    transition-duration: 0.5s;
+    background: -webkit-gradient(linear, left top, left bottom, from(map-get($map: $colors, $key: color-one)), to(map-get($map: $colors, $key: color-two)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

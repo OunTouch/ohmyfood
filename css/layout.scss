@@ -26,12 +26,7 @@ section{
 footer{
     background-color: map-get($map: $colors, $key: color-five);
     @include flexcolumn;
-}
-
-.footer__pages{
-    position: absolute;
-    top: 100%;
-    width: 100%;
+    height: 7em;
 
     img{
         width: 90px;
@@ -43,3 +38,5 @@ footer{
         font-size: 13px;
     }
 }
+
+
