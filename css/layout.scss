@@ -16,10 +16,59 @@ section{
     padding: 0 5%;
 }
 
-.presentation{
-    text-align: center;
+
+
+
+/****HEADERS****/
+
+.header__landing{
+    width:100%;
+    height: fit-content;
+    @include flexcolumn;
+
+    figure{
+        width: 100%;
+        height: 60px;
+        @include flexcenter;
+        z-index: 10;
+        box-shadow: 0 0 10px 0 gray;
+
+        img{
+            width: auto;
+            height: 35px;
+        }
+    }
+
+    &--location{
+        width: 100%;
+        height: 60px;
+        background-color: map-get($map: $colors, $key: color-four);
+        @include flexcenter;
+        z-index: 5;
+
+        i{
+            margin-right: 5px;
+        }
+
+    }    
 }
 
+.presentation{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(map-get($map:$colors, $key: color-four)));
+
+    &__link{
+        margin: auto;
+        width: 220px;
+        height: 50px;
+        -webkit-text-fill-color: white;
+        border-radius: 60px;
+        background: -webkit-gradient(linear, left top, left bottom, from(map-get($map: $colors, $key: color-two)), to(map-get($map: $colors, $key: color-one)));
+        @include flexcenter;
+    }
+}
 
 /****FOOTER****/
 

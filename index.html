@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header">
+    <div class="loadingSpinner">
+        <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+    <header class="header__landing">
         <figure>
             <img src="./images/logo/ohmyfood.png" alt="logo" />
         </figure>
-        <div class="header__location">
+        <div class="header__landing--location">
             <i class="fa-solid fa-location-dot"></i>
             <p>Paris, Belleville</p>
         </div>
@@ -27,31 +30,39 @@
             <p>
                 Découvrez des restaurants d'exception, sélectionnés par nos soins.
             </p>
-            <a href="">
-                Explorer nos restaurants
+            <a href="#restaurants" class="presentation__link">
+                    Explorer nos restaurants
             </a>
         </section>
         <section>
             <h2>
                 Fonctionnement
             </h2>
-                <button class="btn">
-                    <p class="btn__order">1</p>
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    <p class="btn__text">Choisissez votre restaurant</p>
-                </button>
-                <button class="btn">
-                    <p class="btn__order">2</p>
-                    <i class="fa-solid fa-list"></i>
-                    <p class="btn__text">Composez votre menu</p> 
-                </button>
-                <button class="btn">
-                    <p class="btn__order">3</p>
-                    <i class="fa-solid fa-store"></i>
-                    <p class="btn__text">Dégustez au restaurant</p>
-                </button>
+            <div>
+                <a href="#">
+                    <button class="btn">
+                        <p class="btn__order">1</p>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <p class="btn__text">Choisissez votre restaurant</p>
+                    </button> 
+                </a>
+                <a href="#">
+                    <button class="btn">
+                        <p class="btn__order">2</p>
+                        <i class="fa-solid fa-list"></i>
+                        <p class="btn__text">Composez votre menu</p> 
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="btn">
+                        <p class="btn__order">3</p>
+                        <i class="fa-solid fa-store"></i>
+                        <p class="btn__text">Dégustez au restaurant</p>
+                    </button>
+                </a>
+            </div>
         </section>
-        <section>
+        <section id="restaurants">
             <h2>
                 Restaurants
             </h2>
