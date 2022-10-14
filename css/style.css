@@ -249,84 +249,70 @@ input:checked ~ .fas {
   }
 }
 /****BOUTON DES PLATS****/
-.dishe__price {
-  width: 50px;
+.dishe {
+  width: 350px;
   height: 50px;
-  padding-right: 10px;
-  transition: width 400ms;
-  position: relative;
-}
-.dishe__price span {
-  position: sticky;
-  left: 10px;
-  bottom: 10px;
-}
-
-.dishe__btn {
-  border-radius: 5px;
-  border: none;
-  width: 250px;
-  height: 50px;
-  box-shadow: 0px 10px 15px -5px grey;
-  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  padding-right: 0;
-  background-color: white;
-  transition: width 400ms ease-in-out;
+  overflow: hidden;
+  max-width: 100%;
 }
-.dishe__btn:hover .dishe__animation {
-  transform: translateX(-50px);
+.dishe__description {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
 }
-.dishe__btn:hover .dishe__animation i {
-  transform: rotate(0);
-}
-.dishe__btn:hover .dishe__price {
+.dishe__icone {
   width: 100px;
-}
-
-.dishe__text {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  /*max-width: 100%;*/
-}
-.dishe__text h3 {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-weight: bold;
-  width: fit-content;
-  font-size: 14px;
-}
-.dishe__text p {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-}
-
-.dishe__animation {
-  width: 50px;
-  height: 60px;
-  background-color: #99E2D0;
+  background: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(0);
-  transition: transform 400ms;
-  margin-right: -50px;
+  margin-right: -100px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
-.dishe__animation i {
-  color: white;
+.dishe:hover .dishe__icone {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.dishe:hover .dishe__icone i {
+  transform: rotate(0);
+}
+
+.dishe__text {
+  width: 100%;
+  margin-left: 10px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.dishe__price {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  max-width: 100%;
+}
+
+.dishe__icone > i {
+  color: #99E2D0;
+  padding: 5px;
+  border-radius: 50%;
+  background: white;
   transform: rotate(-180deg);
-  transition: transform 600ms 100ms ease-out;
+  transition: transform 0.5s;
+}
+
+.dishe__text > * {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 /****FONTS****/
