@@ -11,6 +11,7 @@ $colors:(color-one:#9356DC, color-two:#FF79DA,color-three:#99E2D0,color-four:#f6
 
 
 /****FLEX****/
+
 @mixin flexcolumn {
     display: flex;
     flex-direction: column; 
@@ -22,6 +23,17 @@ $colors:(color-one:#9356DC, color-two:#FF79DA,color-three:#99E2D0,color-four:#f6
     align-items: center; 
     
 }
+
+/****TEXTE ELLIPSIS****/
+
+@mixin textEllipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+
 
 
 

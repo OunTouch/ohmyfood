@@ -54,6 +54,7 @@ a {
 */
 /****COLORS****/
 /****FLEX****/
+/****TEXTE ELLIPSIS****/
 /****BORDERBOX****/
 *, ::before, ::after {
   box-sizing: border-box;
@@ -243,11 +244,11 @@ input:checked ~ .fas {
   }
 }
 /****BOUTON DES PLATS****/
-.btn__dishe {
+.dishe__btn {
   border-radius: 5px;
   border: none;
-  width: 10rem;
-  height: 4rem;
+  width: 250px;
+  height: 50px;
   box-shadow: 0px 10px 15px -5px grey;
   overflow: hidden;
   display: flex;
@@ -255,40 +256,57 @@ input:checked ~ .fas {
   cursor: pointer;
   padding-right: 0;
   background-color: white;
+  transition: width 400ms ease-in-out;
 }
-.btn__dishe span {
+.dishe__btn span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
   transform: translateX(0);
   transition: transform 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.btn__dishe:hover .card__animation {
+.dishe__btn:hover {
+  width: 200px;
+}
+.dishe__btn:hover .dishe__animation {
   transform: translateX(-50px);
 }
-.btn__dishe:hover .card__animation i {
+.dishe__btn:hover .dishe__animation i {
   transform: rotate(0);
 }
-.btn__dishe:hover .text p span {
+.dishe__btn:hover .dishe__price {
   transform: translateX(-50px);
 }
 
-.text {
-  width: 100%;
+.dishe__text > * {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  max-width: 100%;
 }
-.text h3 {
+.dishe__text > * h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   font-weight: bold;
   width: fit-content;
   font-size: 14px;
 }
-.text p {
+.dishe__text > * p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
 }
 
-.card__animation {
-  width: 50px;
-  height: 4rem;
+.dishe__animation {
+  width: 52px;
+  height: 60px;
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
@@ -297,7 +315,7 @@ input:checked ~ .fas {
   transition: transform 400ms;
   margin-right: -50px;
 }
-.card__animation i {
+.dishe__animation i {
   color: white;
   transform: rotate(-180deg);
   transition: transform 600ms 100ms ease-out;
