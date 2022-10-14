@@ -91,6 +91,11 @@ a {
   justify-content: center;
   align-items: center;
 }
+.btn__link {
+  width: 250px;
+  height: 50px;
+  color: black;
+}
 .btn i {
   position: absolute;
   top: 15px;
@@ -244,6 +249,19 @@ input:checked ~ .fas {
   }
 }
 /****BOUTON DES PLATS****/
+.dishe__price {
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+  transition: width 400ms;
+  position: relative;
+}
+.dishe__price span {
+  position: sticky;
+  left: 10px;
+  bottom: 10px;
+}
+
 .dishe__btn {
   border-radius: 5px;
   border: none;
@@ -252,25 +270,13 @@ input:checked ~ .fas {
   box-shadow: 0px 10px 15px -5px grey;
   overflow: hidden;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   cursor: pointer;
   padding-right: 0;
   background-color: white;
   transition: width 400ms ease-in-out;
-}
-.dishe__btn span {
-  display: block;
-  width: 50px;
-  height: 50px;
-  padding-right: 10px;
-  transform: translateX(0);
-  transition: transform 400ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.dishe__btn:hover {
-  width: 200px;
 }
 .dishe__btn:hover .dishe__animation {
   transform: translateX(-50px);
@@ -279,16 +285,18 @@ input:checked ~ .fas {
   transform: rotate(0);
 }
 .dishe__btn:hover .dishe__price {
-  transform: translateX(-50px);
+  width: 100px;
 }
 
-.dishe__text > * {
+.dishe__text {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /*max-width: 100%;*/
 }
-.dishe__text > * h3 {
+.dishe__text h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -296,7 +304,7 @@ input:checked ~ .fas {
   width: fit-content;
   font-size: 14px;
 }
-.dishe__text > * p {
+.dishe__text p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -305,7 +313,7 @@ input:checked ~ .fas {
 }
 
 .dishe__animation {
-  width: 52px;
+  width: 50px;
   height: 60px;
   background-color: #99E2D0;
   display: flex;
