@@ -40,6 +40,11 @@
     height: 15%;
     
 }
+
+$num-btn:10;
+$anim-dur: 1000ms;
+$anim-delay: calc($anim-dur / $num-btn);
+
 .menu__restaurant{
     position: relative;
     margin-top: -5rem;
@@ -63,8 +68,27 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-}
 
+    button{
+        opacity: 1;
+        animation: appear 1s cubic-bezier(.39,.22,1,.13) backwards;
+        @for $i from 1 through $num-btn{
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+        }
+        
+    }
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
 .title__underline{
     border-bottom: 4px solid map-get($map: $colors, $key: color-three);
 }   
