@@ -257,6 +257,14 @@ input:checked ~ .fas {
   display: flex;
   overflow: hidden;
   max-width: 100%;
+  cursor: pointer;
+  border: none;
+  appearance: none;
+  text-align: unset;
+  align-items: center;
+  padding: initial;
+  writing-mode: unset;
+  margin: 10px 0;
 }
 .dishe__description {
   width: 100%;
@@ -266,6 +274,7 @@ input:checked ~ .fas {
 }
 .dishe__icone {
   width: 100px;
+  height: 100%;
   background: #99E2D0;
   display: flex;
   justify-content: center;
@@ -368,8 +377,8 @@ section {
   height: 150px;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f6f6f6));
 }
-.presentation__link {
-  margin: auto;
+.presentation__link, .order__link {
+  margin: 10px auto;
   width: 220px;
   height: 50px;
   -webkit-text-fill-color: white;
@@ -385,15 +394,22 @@ footer {
   background-color: rgb(50, 60, 55);
   display: flex;
   flex-direction: column;
-  height: 7em;
+  height: 150px;
+  padding-left: 5%;
 }
 footer img {
   width: 90px;
-  height: 20px;
+  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 footer a {
   color: white;
   font-size: 13px;
+  padding-top: 5px;
+}
+footer a i {
+  margin-right: 10px;
 }
 
 /****RESTAURANTS****/
@@ -422,6 +438,9 @@ footer a {
 .main__restaurant {
   height: fit-content;
 }
+.main__restaurant section:last-child {
+  margin: 30px auto;
+}
 
 .img__landing {
   object-fit: cover;
@@ -441,12 +460,19 @@ footer a {
   padding-top: 15px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .menu__restaurant h1:not(i) {
   font-size: 21px;
 }
 .menu__restaurant h2 {
   font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title__underline {
+  border-bottom: 4px solid #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

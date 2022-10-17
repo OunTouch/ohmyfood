@@ -27,6 +27,10 @@
 
 .main__restaurant{
     height: fit-content;
+
+    section:last-child{
+        margin: 30px auto;
+    }
 }
 
 .img__landing{
@@ -47,6 +51,7 @@
         padding-top: 15px;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 10px;
 
         &:not(i){
             font-size: 21px;
@@ -55,9 +60,14 @@
 
     h2{
         font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
-   
+
+.title__underline{
+    border-bottom: 4px solid map-get($map: $colors, $key: color-three);
+}   
 
 
 

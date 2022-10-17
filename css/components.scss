@@ -202,6 +202,14 @@ input:checked ~ .fa-regular {
     display: flex;
     overflow: hidden;
     max-width: 100%;
+    cursor: pointer;
+    border: none;
+    appearance: none;
+    text-align: unset;
+    align-items: center;
+    padding: initial;
+    writing-mode: unset;
+    margin: 10px 0;
 
     &__description {
         width: 100%;
@@ -212,6 +220,7 @@ input:checked ~ .fa-regular {
 
     &__icone {
         width: 100px;
+        height: 100%;
         background: map-get($map: $colors, $key: color-three);
         @include flexcenter;
         margin-right: -100px;
@@ -262,3 +271,7 @@ input:checked ~ .fa-regular {
     max-width: 100%;
   }
 
+
+.order__link{
+    @extend .presentation__link;
+}
