@@ -1,11 +1,13 @@
 .btn{
-    width: 250px;
+    width: 275px;
     height: 50px;
     border-radius: 15px;
     background-color: map-get($map: $colors, $key: color-four);
     display: flex;
     position: relative;
     border: none;
+    margin: 10px 0;
+    @include boxShadow;
     
     &__order{
         position: absolute;
@@ -37,6 +39,7 @@
         position: absolute;
         top: 15px;
         left: 40px;
+        font-size: 15px;
     }
 
 
@@ -44,16 +47,38 @@
 
 
 .card{
-    border: 1px solid map-get($map: $colors, $key: color-four);
-    border-radius: 15px;
+    @include boxShadow;
+    border-radius: 25px;
     position: relative;
+    margin: 20px 0;
+
+    &__flag{
+        position: absolute;
+        top: 10px;
+        right: 22px;
+        width: 80px;
+        height: 24px;
+        background-color: map-get($map: $colors, $key: color-three);
+        border-radius: 5px;
+
+        p{
+            color: darken($color: map-get($map: $colors, $key: color-three), $amount: 50%) !important;
+            font-size: 15px;
+        }
+    }
 
     a{
         text-decoration: none;
     }
 
     h3,p{
-        padding: 1%;
+        color: black;
+        padding-left: 10px;
+        padding-top: 2px;
+    }
+
+    h3{
+        font-weight: bold;
     }
 
     img{
@@ -61,13 +86,17 @@
         object-position: center;
         width: 100%;
         height: 180px;
-        border-radius: 15px 15px 0 0;
+        border-radius: 25px 25px 0 0;
     }
 
-    i{
+    .heart__checkbox{
         position: absolute;
-        bottom: 8%;
-        right: 7%;
+        bottom: 7%;
+        right: 4%;
+    }
+
+    figcaption{
+        height: 50px;
     }
 
 }
@@ -77,22 +106,23 @@
 
 .heart__checkbox{
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
 }
 
 .heart--empty{
     position: absolute;
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
 }
 
 .heart--fill{
     position: absolute;
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
     opacity: 0;
     transition-duration: 0.5s;
     background: -webkit-gradient(linear, left top, left bottom, from(map-get($map: $colors, $key: color-one)), to(map-get($map: $colors, $key: color-two)));
@@ -102,8 +132,8 @@
 
 input {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     opacity: 0;
     cursor: pointer;
     z-index: 10;
@@ -132,7 +162,7 @@ input:checked ~ .fa-regular {
     background-color: map-get($map: $colors, $key: color-four);
     animation-name: loader;
     animation-duration: .5s;
-    animation-delay: 2.5s;
+    animation-delay: 1.75s;
     animation-fill-mode: both;
 
     @keyframes loader {
@@ -197,7 +227,6 @@ input:checked ~ .fa-regular {
 .dishe{
     width: 350px;
     height: 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
     display: flex;
     overflow: hidden;
@@ -210,6 +239,7 @@ input:checked ~ .fa-regular {
     padding: initial;
     writing-mode: unset;
     margin: 10px 0;
+    @include boxShadow;
 
     &__description {
         width: 100%;

@@ -33,6 +33,12 @@ $colors:(color-one:#9356DC, color-two:#FF79DA,color-three:#99E2D0,color-four:#f6
     
 }
 
+/****BOX SHADOW****/
+
+@mixin boxShadow {
+    box-shadow: 0 3px 10px -2px map-get($map: $colors, $key: color-five);
+}
+
 
 
 

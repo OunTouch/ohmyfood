@@ -55,6 +55,7 @@ a {
 /****COLORS****/
 /****FLEX****/
 /****TEXTE ELLIPSIS****/
+/****BOX SHADOW****/
 /****BORDERBOX****/
 *, ::before, ::after {
   box-sizing: border-box;
@@ -70,13 +71,15 @@ a {
   src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
 }
 .btn {
-  width: 250px;
+  width: 275px;
   height: 50px;
   border-radius: 15px;
   background-color: #f6f6f6;
   display: flex;
   position: relative;
   border: none;
+  margin: 10px 0;
+  box-shadow: 0 3px 10px -2px rgb(50, 60, 55);
 }
 .btn__order {
   position: absolute;
@@ -106,51 +109,75 @@ a {
   position: absolute;
   top: 15px;
   left: 40px;
+  font-size: 15px;
 }
 
 .card {
-  border: 1px solid #f6f6f6;
-  border-radius: 15px;
+  box-shadow: 0 3px 10px -2px rgb(50, 60, 55);
+  border-radius: 25px;
   position: relative;
+  margin: 20px 0;
+}
+.card__flag {
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  width: 80px;
+  height: 24px;
+  background-color: #99E2D0;
+  border-radius: 5px;
+}
+.card__flag p {
+  color: #1b6150 !important;
+  font-size: 15px;
 }
 .card a {
   text-decoration: none;
 }
 .card h3, .card p {
-  padding: 1%;
+  color: black;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+.card h3 {
+  font-weight: bold;
 }
 .card img {
   object-fit: cover;
   object-position: center;
   width: 100%;
   height: 180px;
-  border-radius: 15px 15px 0 0;
+  border-radius: 25px 25px 0 0;
 }
-.card i {
+.card .heart__checkbox {
   position: absolute;
-  bottom: 8%;
-  right: 7%;
+  bottom: 7%;
+  right: 4%;
+}
+.card figcaption {
+  height: 50px;
 }
 
 /****COEUR****/
 .heart__checkbox {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
 }
 
 .heart--empty {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  font-size: 30px;
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
 }
 
 .heart--fill {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  font-size: 30px;
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
   opacity: 0;
   transition-duration: 0.5s;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
@@ -160,8 +187,8 @@ a {
 
 input {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   opacity: 0;
   cursor: pointer;
   z-index: 10;
@@ -189,7 +216,7 @@ input:checked ~ .fas {
   background-color: #f6f6f6;
   animation-name: loader;
   animation-duration: 0.5s;
-  animation-delay: 2.5s;
+  animation-delay: 1.75s;
   animation-fill-mode: both;
 }
 @keyframes loader {
@@ -252,7 +279,6 @@ input:checked ~ .fas {
 .dishe {
   width: 350px;
   height: 50px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   display: flex;
   overflow: hidden;
@@ -265,6 +291,7 @@ input:checked ~ .fas {
   padding: initial;
   writing-mode: unset;
   margin: 10px 0;
+  box-shadow: 0 3px 10px -2px rgb(50, 60, 55);
 }
 .dishe__description {
   width: 100%;
@@ -333,9 +360,10 @@ h2, p, a, li {
   font-family: "Roboto";
 }
 
-/****PADDINGS****/
+/****PADDINGS MARGINS****/
 section {
   padding: 0 5%;
+  margin-top: 20px;
 }
 
 /****HEADERS****/
@@ -389,6 +417,12 @@ section {
   align-items: center;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 /****FOOTER****/
 footer {
   background-color: rgb(50, 60, 55);
@@ -396,6 +430,7 @@ footer {
   flex-direction: column;
   height: 150px;
   padding-left: 5%;
+  margin-top: 40px;
 }
 footer img {
   width: 90px;
@@ -472,7 +507,7 @@ footer a i {
 }
 .menu__restaurant button {
   opacity: 1;
-  animation: appear 1s cubic-bezier(0.39, 0.22, 1, 0.13) backwards;
+  animation: appear 1s cubic-bezier(0.39, 0.22, 1, 0.13);
 }
 .menu__restaurant button--1 {
   animation-delay: 100ms;

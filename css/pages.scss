@@ -71,15 +71,18 @@ $anim-delay: calc($anim-dur / $num-btn);
 
     button{
         opacity: 1;
-        animation: appear 1s cubic-bezier(.39,.22,1,.13) backwards;
+        animation: appear 1s cubic-bezier(.39,.22,1,.13);  
         @for $i from 1 through $num-btn{
             &--#{$i} {
                 animation-delay: $anim-delay * $i;
             }
-        }
-        
+        }      
     }
 }
+
+    
+
+
 @keyframes appear {
     from{
         opacity: 0;

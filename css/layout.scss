@@ -10,10 +10,11 @@ h2,p, a,li{
 }
 
 
-/****PADDINGS****/
+/****PADDINGS MARGINS****/
 
 section{
     padding: 0 5%;
+    margin-top: 20px;
 }
 
 
@@ -70,6 +71,11 @@ section{
     }
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 /****FOOTER****/
 
 footer{
@@ -77,6 +83,7 @@ footer{
     @include flexcolumn;
     height: 150px;
     padding-left: 5%;
+    margin-top: 40px;
 
     img{
         width: 90px;
