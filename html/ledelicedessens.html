@@ -10,108 +10,167 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <img src="../images/logo/ohmyfood@2x.svg" alt="logo">
+    <header class="header__restaurant">
         <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/logo/ohmyfood.png" alt="logo">
     </header>
-    <main>
-        <figure>
+    <main class="main__restaurant">
+        <figure class="img__landing">
             <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="un plat de restaurant">
         </figure>
-        <section>
+        <section class="menu__restaurant">
             <h1>
                 Le délice des sens
-                <i class="fa-regular fa-heart"></i>
+                <div class="heart__checkbox">
+                    <input type="checkbox">
+                    <i class="fa-regular fa-heart heart--empty"></i>
+                    <i class="fas fa-heart heart--fill"></i>
+                </div>
             </h1>
             <h2>
-                ENTRÉES
+                <span class="title__underline">ENTR</span>ÉES
             </h2>
-            <article>
-                <h3>Tartare de thon</h3>
-                <p>
-                    Assaisonné au yuzu
-                    <span>25€</span>
-                </p>
-                <i class="fa-regular fa-circle-check"></i>
-            </article>
-            <article>
-                <h3>Bouchée de homard croustillant</h3>
-                <p>
-                    Et sa farandole de petits légumes
-                    <span>35€</span>
-                </p>
-                <i class="fa-regular fa-circle-check"></i>
-            </article>
-            <article>
-                <h3>Velouté de cèpes</h3>
-                <p>
-                    Aux truffes
-                    <span>20€</span>
-                </p>
-                <i class="fa-regular fa-circle-check"></i>
-            </article>
+            <button class="dishe button button--1">
+                <div class="dishe__description">
+                    <div class="dishe__text">
+                        <p><strong>Tartare de thon</strong></p>
+                        <p>Assaisonné au yuzu</p>
+                    </div>
+                    <div class="dishe__price">
+                        <span><strong>25€</strong></span>
+                    </div>
+                </div>
+                <div class="dishe__icone">
+                    <i class="fas fa-check"></i>
+                </div>
+            </button>
+            <button class="dishe button button--2">
+                <div class="dishe__description">
+                    <div class="dishe__text">
+                        <p><strong>Bouchée de homard croustillant</strong></p>
+                        <p>Et sa farandole de petits légumes</p>
+                    </div>
+                    <div class="dishe__price">
+                        <span><strong>35€</strong></span>
+                    </div>
+                </div>
+                <div class="dishe__icone">
+                    <i class="fas fa-check"></i>
+                </div>
+            </button>
+            <button class="dishe button button--3">
+                <div class="dishe__description">
+                    <div class="dishe__text">
+                        <p><strong>Velouté de cèpes</strong></p>
+                        <p>Aux truffes</p>
+                    </div>
+                    <div class="dishe__price">
+                        <span><strong>20€</strong></span>
+                    </div>
+                </div>
+                <div class="dishe__icone">
+                    <i class="fas fa-check"></i>
+                </div>
+            </button>
             <h2>
-                PLATS
+                <span class="title__underline">PLAT</span>S
             </h2>
-            <article>
-                <h3>Poulet rôti aux herbes de Provence</h3>
-                <p>
-                    Et sa crème de truffe
-                    <span>40€</span>
-                </p>
-                <i class="fa-regular fa-circle-check"></i>
-            </article>
-            <article>
-                <h3>Langouste rôtie</h3>
-                <p>
-                    Et ses légumes de saison
-                    <span>35€</span>
-                </p>
-                <i class="fa-regular fa-circle-check"></i>
-            </article>
-            <article>
-                <h3>Côte de boeuf Angus</h3>
-                <p>
-                    Et sa purée de panais
-                    <span>44€</span>
-                </p>
-                <i class="fa-regular fa-circle-check"></i>
-            </article>
-            <h2>
-                DESSERTS
+            <button class="dishe button button--4">
+                <div class="dishe__description">
+                    <div class="dishe__text">
+                        <p><strong>Poulet rôti aux herbes de Provence</strong></p>
+                        <p>Et sa crème de truffe</p>
+                    </div>
+                    <div class="dishe__price">
+                        <span><strong>40€</strong></span>
+                    </div>
+                </div>
+                <div class="dishe__icone">
+                    <i class="fas fa-check"></i>
+                </div>
+            </button>
+            <button class="dishe button button--5">
+                <div class="dishe__description">
+                    <div class="dishe__text">
+                        <p><strong>Langouste rôtie</strong></p>
+                        <p>Et ses légumes de saison
+                        </p>
+                    </div>
+                    <div class="dishe__price">
+                        <span><strong>35€</strong></span>
+                    </div>
+                </div>
+                <div class="dishe__icone">
+                    <i class="fas fa-check"></i>
+                </div>
+            </button>
+            <button class="dishe button button--6">
+                <div class="dishe__description">
+                    <div class="dishe__text">
+                        <p><strong>Côte de boeuf Angus</strong></p>
+                        <p>Et sa purée de panais</p>
+                    </div>
+                    <div class="dishe__price">
+                        <span><strong>44€</strong></span>
+                    </div>
+                </div>
+                <div class="dishe__icone">
+                    <i class="fas fa-check"></i>
+                </div>
+            </button>
+             <h2>
+                <span class="title__underline">DESS</span>ERTS
             </h2>
-            <article>
-                <h3>Farandole de desserts</h3>
-                <p>
-                    Du chef
-                    <span>18€</span>
-                </p>
-                <i class="fa-regular fa-circle-check"></i>
-            </article>
-            <article>
-                <h3>Crème brulée</h3>
-                <p>
-                    Revisitée
-                    <span>22€</span>
-                </p>
-                <i class="fa-regular fa-circle-check"></i>
-            </article>
-            <article>
-                <h3>Tiramisu</h3>
-                <p>
-                    À la noisette
-                    <span>23€</span>
-                </p>
-                <i class="fa-regular fa-circle-check"></i>
-            </article>
+            <button class="dishe button button--7">
+                <div class="dishe__description">
+                    <div class="dishe__text">
+                        <p><strong>Farandole de desserts</strong></p>
+                        <p>Du chef</p>
+                    </div>
+                    <div class="dishe__price">
+                        <span><strong>18€</strong></span>
+                    </div>
+                </div>
+                <div class="dishe__icone">
+                    <i class="fas fa-check"></i>
+                </div>
+            </button>
+            <button class="dishe button button--8">
+                <div class="dishe__description">
+                    <div class="dishe__text">
+                        <p><strong>Crème brulée</strong></p>
+                        <p>Revisitée</p>
+                    </div>
+                    <div class="dishe__price">
+                        <span><strong>22€</strong></span>
+                    </div>
+                </div>
+                <div class="dishe__icone">
+                    <i class="fas fa-check"></i>
+                </div>
+            </button>
+            <button class="dishe button button--9">
+                <div class="dishe__description">
+                    <div class="dishe__text">
+                        <p><strong>Tiramisu</strong></p>
+                        <p>À la noisette</p>
+                    </div>
+                    <div class="dishe__price">
+                        <span><strong>23€</strong></span>
+                    </div>
+                </div>
+                <div class="dishe__icone">
+                    <i class="fas fa-check"></i>
+                </div>
+            </button>
         </section>
         <section>
-            <a href="#">Commander</a>
+            <a href="#" class="order__link">Commander</a>
         </section>
     </main>
-    <footer>
-        <img src="../images/logo/ohmyfood.png" alt="logo">
-        <a href="#"><i class="fa-solid fa-utensils"></i>Proposer unrestaurant</a>
+    <footer class="footer__pages">
+        <img src="../images/logo/ohmyfood@2x.svg" alt="logo">
+        <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
         <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
         <a href="#">Mentions légales</a>
         <a href="mailto:ountouch@gmail.com">Contact</a>

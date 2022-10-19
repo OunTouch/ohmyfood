@@ -171,6 +171,7 @@ a {
   width: 22px;
   height: 22px;
   font-size: 22px;
+  color: black;
 }
 
 .heart--fill {
@@ -383,7 +384,7 @@ section {
   box-shadow: 0 0 10px 0 gray;
 }
 .header__landing figure img {
-  width: auto;
+  width: 150px;
   height: 35px;
 }
 .header__landing--location {
@@ -464,10 +465,11 @@ footer a i {
 }
 .header__restaurant a i {
   font-size: large;
+  color: black;
 }
 .header__restaurant img {
-  width: 50%;
-  height: 70%;
+  width: 150px;
+  height: 35px;
 }
 
 .main__restaurant {
@@ -481,7 +483,11 @@ footer a i {
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: 15%;
+  height: 300px;
+}
+.img__landing img {
+  width: 100%;
+  height: 100%;
 }
 
 .menu__restaurant {
