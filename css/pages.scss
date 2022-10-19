@@ -69,9 +69,10 @@ $anim-delay: calc($anim-dur / $num-btn);
         margin-bottom: 20px;
     }
 
-    button{
+    .button{
         opacity: 1;
-        animation: appear 1s cubic-bezier(.39,.22,1,.13);  
+        animation: appear 1s cubic-bezier(.39,.22,1,.13); 
+        animation-fill-mode: both; 
         @for $i from 1 through $num-btn{
             &--#{$i} {
                 animation-delay: $anim-delay * $i;

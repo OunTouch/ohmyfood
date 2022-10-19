@@ -505,38 +505,39 @@ footer a i {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.menu__restaurant button {
+.menu__restaurant .button {
   opacity: 1;
   animation: appear 1s cubic-bezier(0.39, 0.22, 1, 0.13);
+  animation-fill-mode: both;
 }
-.menu__restaurant button--1 {
+.menu__restaurant .button--1 {
   animation-delay: 100ms;
 }
-.menu__restaurant button--2 {
+.menu__restaurant .button--2 {
   animation-delay: 200ms;
 }
-.menu__restaurant button--3 {
+.menu__restaurant .button--3 {
   animation-delay: 300ms;
 }
-.menu__restaurant button--4 {
+.menu__restaurant .button--4 {
   animation-delay: 400ms;
 }
-.menu__restaurant button--5 {
+.menu__restaurant .button--5 {
   animation-delay: 500ms;
 }
-.menu__restaurant button--6 {
+.menu__restaurant .button--6 {
   animation-delay: 600ms;
 }
-.menu__restaurant button--7 {
+.menu__restaurant .button--7 {
   animation-delay: 700ms;
 }
-.menu__restaurant button--8 {
+.menu__restaurant .button--8 {
   animation-delay: 800ms;
 }
-.menu__restaurant button--9 {
+.menu__restaurant .button--9 {
   animation-delay: 900ms;
 }
-.menu__restaurant button--10 {
+.menu__restaurant .button--10 {
   animation-delay: 1000ms;
 }
 
