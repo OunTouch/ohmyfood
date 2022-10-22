@@ -8,6 +8,11 @@
 
 $colors:(color-one:#9356DC, color-two:#FF79DA,color-three:#99E2D0,color-four:#f6f6f6,color-five:rgb(50, 60, 55));
 
+/****ANIMATION MENU OPACITY****/
+
+$num-btn:10;
+$anim-dur: 1000ms;
+$anim-delay: calc($anim-dur / $num-btn);
 
 
 /****FLEX****/

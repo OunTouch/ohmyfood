@@ -6,6 +6,7 @@
     height: 60px;
     @include flexcenter;
     position: relative;
+    background-color: white;
 
 
     a{
@@ -47,9 +48,7 @@
     
 }
 
-$num-btn:10;
-$anim-dur: 1000ms;
-$anim-delay: calc($anim-dur / $num-btn);
+
 
 .menu__restaurant{
     position: relative;
@@ -57,13 +56,10 @@ $anim-delay: calc($anim-dur / $num-btn);
     width: 100%;
     border-radius: 2em 2em 0 0;
     background-color: map-get($map: $colors, $key: color-four);
+    padding-bottom: 20px;
 
+    
     h1{
-        padding-top: 15px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-
         &:not(i){
             font-size: 21px;
         }
@@ -102,6 +98,39 @@ $anim-delay: calc($anim-dur / $num-btn);
 .title__underline{
     border-bottom: 4px solid map-get($map: $colors, $key: color-three);
 }   
+
+.name__restaurant{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 0;
+}
+
+.dishe__container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width:900px) {
+    
+    .img__landing{
+        width:100%;
+        height:100%;
+        position:fixed;
+        z-index: -10000;
+        top: 0;
+    }
+
+    .menu__restaurant{
+        width: 90%;
+        margin: auto;
+        margin-top: 120px;
+        background-color: #f6f6f690;
+        border-radius: 2em;
+    }
+    
+}
 
 
 
