@@ -4,8 +4,10 @@
   "description": "website",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./css/main.scss:./css/style.css"
+    "sass":"sass --watch ./css/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "OunTouch",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }
