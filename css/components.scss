@@ -9,6 +9,8 @@
     margin: 10px 0;
     @include boxShadow;
     cursor: pointer;
+    transition: all 0.2 ease-in-out;
+
     
     &__order{
         position: absolute;
@@ -26,17 +28,21 @@
         position: absolute;
         top: 17px;
         bottom: 0;
-        left: 20px;
+        left: 25px;
+        color: grey;
     }
 
     &__text{
         position: absolute;
-        top: 15px;
-        left: 40px;
+        top: 17px;
+        left: 55px;
         font-size: 15px;
     }
 
+}
 
+.btn :hover{
+    background-color: aqua;
 }
 
 

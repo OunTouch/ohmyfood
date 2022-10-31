@@ -9,6 +9,19 @@ h2,p, a,li ,div {
     font-family: "Roboto";
 }
 
+h2{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.presentation__title {
+    font-family: "Roboto";
+    font-size: 23px;
+    width: 70%;
+    margin: auto;
+    font-weight: bolder;
+}
+
 
 /****PADDINGS MARGINS****/
 
@@ -57,11 +70,15 @@ section{
 .presentation{
     text-align: center;
     width: 100%;
-    height: 150px;
+    height: 200px;
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(map-get($map:$colors, $key: color-four)));
 
+    p{
+        margin-top: 10px;
+    }
+
     &__link{
-        margin: 10px auto;
+        margin: 20px auto;
         width: 220px;
         height: 50px;
         -webkit-text-fill-color: white;
@@ -84,6 +101,7 @@ footer{
     height: 150px;
     padding-left: 5%;
     margin-top: 40px;
+    bottom: 0;
 
     img{
         width: 90px;

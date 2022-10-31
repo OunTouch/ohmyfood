@@ -1,6 +1,11 @@
 /****RESTAURANTS****/
 
 
+#restaurants{
+    background-color: map-get($map: $colors, $key: color-four);
+    padding-top: 20px;
+}
+
 .header__restaurant{
     width: 100%;
     height: 60px;
