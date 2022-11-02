@@ -7,6 +7,8 @@
 /****COLORS****/
 
 $colors:(color-one:#9356DC, color-two:#FF79DA,color-three:#99E2D0,color-four:#f6f6f6,color-five:rgb(50, 60, 55));
+$lighten: lighten(map-get($map: $colors, $key: color-two), 20%);
+
 
 /****ANIMATION MENU OPACITY****/
 
