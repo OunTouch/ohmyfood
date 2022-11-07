@@ -7,7 +7,7 @@
 /****COLORS****/
 
 $colors:(color-one:#9356DC, color-two:#FF79DA,color-three:#99E2D0,color-four:#f6f6f6,color-five:rgb(50, 60, 55));
-$lighten: lighten(map-get($map: $colors, $key: color-two), 20%);
+$lighten: lighten(map-get($map: $colors, $key: color-one), 37%);
 
 
 /****ANIMATION MENU OPACITY****/
@@ -43,7 +43,7 @@ $anim-delay: calc($anim-dur / $num-btn);
 /****BOX SHADOW****/
 
 @mixin boxShadow {
-    box-shadow: 0 3px 10px -2px map-get($map: $colors, $key: color-five);
+    box-shadow: 0 2px 10px -2px rgb(216, 213, 213);
 }
 
 

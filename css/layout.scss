@@ -85,6 +85,26 @@ section{
         border-radius: 60px;
         background: -webkit-gradient(linear, left top, left bottom, from(map-get($map: $colors, $key: color-two)), to(map-get($map: $colors, $key: color-one)));
         @include flexcenter;
+      
+        
+
+        &:hover{
+            animation-name: zebesthover;
+            animation-duration: 0.4s;
+            animation-timing-function: cubic-bezier(0,.96,1,.67);
+            animation-fill-mode: both;
+          
+        }
+    }
+}
+
+@keyframes zebesthover {
+    from{
+        background: -webkit-gradient(linear, left top, left bottom, from(map-get($map: $colors, $key: color-two)), to(map-get($map: $colors, $key: color-one)));
+
+    }
+    to{
+        background: -webkit-gradient(linear, left top, left bottom, from(map-get($map: $colors, $key: color-one)), to(map-get($map: $colors, $key: color-two)));
     }
 }
 
